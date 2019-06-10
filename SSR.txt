@@ -1,0 +1,66 @@
+wget --no-check-certificate https://freed.ga/github/shadowsocksR.sh; bash shadowsocksR.sh
+
+wget -N --no-check-certificate https://freed.ga/kernel/ruisu.sh && bash ruisu.sh
+
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
+
+wget --no-check-certificate https://github.com/sprov065/blog/raw/master/bbr.sh
+bash bbr.sh   //Google Tcp
+
+207.148.70.11 asd111
+
+准备的东西：
+1.vultr vps主机   vultr官网购买链接：https://www.vultr.com/?ref=7924181   （点此链接购买享受优惠）
+2.xshell 下载：https://www.lanzous.com/i2r479e
+
+
+步骤：
+1.下载安装xshell，并打开xshell，点新建会话，输入ssh点连接，输入用户名：root
+点确定，输入ssh 密码，点连接，弹出一个窗口，点一次性接受，窗口左上角的灯变绿
+就表示连接成功
+2.复制下面这段代码并粘贴到窗口并按回车
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+
+如果出现command not found输入下面这段代码并回车，然后再从第一步重新安装
+yum -y install wget
+
+3.输入下面这段代码并按回车
+
+chmod +x shadowsocks-all.sh
+
+4.输入下面这段代码并回车
+
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+
+
+5.安装bbr加速，输入下面这段代码并回车
+
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+
+安装完成后，脚本提示重启vps，输入y并回车重启，重启完成后进入vps验证bbr是否安装成功
+
+输入下面这段代码并回车检验bbr有没有安装成功
+
+  代码一：uname -r
+  代码二：lsmod | grep bbr 
+
+返回的信息如下含有bbr cubic reno就表示成功了
+
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh 
+chmod +x shadowsocks-all.sh 
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+
+yum update
+
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+
+
+1、	列表框显示信息（每条信息至少包括两个以上信息内容）。
+2、	实现数据的添加（建议使用菜单），列表框数据随之更新。
+3、	数据的删除（长按某一条目时，弹出菜单—删除—使用对话框提示是否删除？）
+4、	单击某一条目查看详细内容。
+
+
+
+
+
