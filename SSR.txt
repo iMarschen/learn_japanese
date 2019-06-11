@@ -61,6 +61,9 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 4、	单击某一条目查看详细内容。
 
 
+sudo wget --no-check-certificate https://raw.githubusercontent.com/hugoyuice/shadowsocks_all/master/shadowsocks.sh
+sudo chmod +x shadowsocks.sh
+sudo ./shadowsocks.sh
 
 
 
