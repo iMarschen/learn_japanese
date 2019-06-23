@@ -54,13 +54,6 @@ yum update
 
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
-
-1、	列表框显示信息（每条信息至少包括两个以上信息内容）。
-2、	实现数据的添加（建议使用菜单），列表框数据随之更新。
-3、	数据的删除（长按某一条目时，弹出菜单—删除—使用对话框提示是否删除？）
-4、	单击某一条目查看详细内容。
-
-
 sudo wget --no-check-certificate https://raw.githubusercontent.com/hugoyuice/shadowsocks_all/master/shadowsocks.sh
 sudo chmod +x shadowsocks.sh
 sudo ./shadowsocks.sh
